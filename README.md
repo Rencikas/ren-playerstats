@@ -17,3 +17,7 @@ This user interface was made with alpinejs. The translations of this menu can be
 
 ![image](https://github.com/Rencikas/ren-playerstats/assets/85559163/b9274dce-a327-4314-87dc-2aabdeab8f07)
 
+# My other work
+- [ren-businesses](https://github.com/Rencikas/ren-businesses)
+- [ren-laundering](https://github.com/Rencikas/ren-laundering)
+- [ren-grandma](https://github.com/Rencikas/ren-grandma)
