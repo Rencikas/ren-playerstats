@@ -13,7 +13,15 @@ function GetAccountMoney(player, account)
 end
 
 function GetPLayerLicenses(player)
-    return player.PlayerData.metadata
+    local licenses = {}
+
+    for k,v in pairs(player.PlayerData.metadata.licences) do 
+        if v then 
+            licenses[#licenses + 1] = { label = k }
+        end
+    end
+
+    return licenses
 end
 
 function GetPLayerJob(player)
