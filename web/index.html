@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
+    <title>ren-playerstats</title>
+</head>
+<body x-data="main()" x-init="listen()" @keyup.escape.window="closeUI" @keyup.backspace.window="closeUI">
+    <div x-show.transition.in.out.duration.200ms="show === true" class="container">
+        <div class="content">
+            <div class="header">Character information</div>
+            <div class="info">
+                <div><i class="fas fa-user"></i></div>
+                <div class="stat">Server ID: <div x-text="id"></div></div>
+            </div>
+            <div class="info">
+                <div><i class="fas fa-user-pen"></i></div>
+                <div class="stat">Steam Name: <div x-text="steam"></div></div> 
+            </div>
+            <div class="line"></div>
+            <div class="info">
+                <div><i class="fas fa-briefcase"></i></div>
+                <div class="stat">Job: <div x-text="job"></div></div>
+            </div> 
+            <div class="info">
+                <div><i class="fas fa-passport"></i></div>
+                <div class="stat">Grade: <div x-text="grade"></div></div>
+            </div> 
+            <div class="line"></div>
+            <div class="info">
+                <div><i class="fas fa-wallet"></i></div>
+                <div class="stat">Cash: <div x-text="cash"></div>$</div>
+            </div>
+            <div class="info">
+                <div><i class="fas fa-piggy-bank"></i></div>
+                <div class="stat">Bank: <div x-text="bank"></div>$</div>
+            </div> 
+            <div class="line"></div>
+            <template x-for="license in licenses">
+                <div class="info">
+                    <div><i class="fas fa-id-card"></i></div>
+                    <div class="stat" x-text="license.label"></div>
+                </div>
+            </template>
+        </div>
+    </div>
+</body>
+<script src="app.js">
+</script>
+</html>
