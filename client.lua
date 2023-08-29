@@ -9,6 +9,7 @@ local function OpenMenu()
             grade = data.grade,
             cash = data.cash,
             bank = data.bank,
+            black_money = data.black_money,
             licenses = data.licenses
         })
     end)

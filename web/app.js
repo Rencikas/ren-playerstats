@@ -7,6 +7,7 @@ function main(){
         grade: 'not found',
         cash: 0,
         bank: 0,
+        black_money: 0,
         licenses: [],     
 
         listen() {
@@ -19,6 +20,7 @@ function main(){
                 this.grade = data.grade,
                 this.cash = data.cash,
                 this.bank = data.bank,
+                this.black_money = data.black_money,
                 this.licenses = data.licenses
             })
         },
