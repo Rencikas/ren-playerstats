@@ -21,3 +21,4 @@ This user interface was made with alpinejs. The translations of this menu can be
 - [ren-businesses](https://github.com/Rencikas/ren-businesses)
 - [ren-laundering](https://github.com/Rencikas/ren-laundering)
 - [ren-grandma](https://github.com/Rencikas/ren-grandma)
+- [peuren_burglary](https://peuren.tebex.io/package/5980960)
